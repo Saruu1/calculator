@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.calc-box{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    /* width: 60vw; */
+    height: 80vh;
+    text-align: center;
+    position: relative;
+    top: 11vh;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+}
+.screen{
+    background-color: black;
+    height: 16vh;
+    width: 230px;
+    margin: 6px;
+    padding: 0;
+    border-radius: 13px;
+    border: 1px solid whitesmoke;
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    /* overflow: hidden; */
+    /* bottom: 20px; */
+}
+.buttons{
+    position: relative;
+    width: 250px;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    top: 1px;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+.topBox{
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(79, 82, 78);
+    color: white;
+    font-size: x-large; 
+}
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(49, 49, 49);
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    position: relative;
+    /* top: 0px; */
+}
+.op-button{
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(237, 135, 11);
+    color: white;
+    font-size: xx-large;
+}
+.afresult{
+    font-size: 17px;
+    color: rgb(96, 94, 94);
+}
+.afequality{
+    font-size: 27px;
+}
