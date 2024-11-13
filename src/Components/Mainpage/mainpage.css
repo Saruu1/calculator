@@ -92,6 +92,7 @@ body{
 @media (max-width: 768px){
     .calc-box{
         height: auto;
+        top: 1vh;
     }
     .screen{
         width: 75vw;
