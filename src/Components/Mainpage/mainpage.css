@@ -91,6 +91,11 @@ body{
 }
 @media (max-width: 768px){
     .screen{
-        width: 60vw;
+        width: 75vw;
+    }
+    .buttons{
+        width: 280px;
+        row-gap: 2px;
+        column-gap: 26px;
     } 
 }
