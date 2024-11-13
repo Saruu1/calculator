@@ -89,3 +89,8 @@ body{
 .afequality{
     font-size: 27px;
 }
+@media (max-width: 768px){
+    .screen{
+        width: 60vw;
+    } 
+}
