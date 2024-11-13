@@ -90,6 +90,9 @@ body{
     font-size: 27px;
 }
 @media (max-width: 768px){
+    .calc-box{
+        height: auto;
+    }
     .screen{
         width: 75vw;
     }
@@ -98,4 +101,5 @@ body{
         row-gap: 2px;
         column-gap: 26px;
     } 
+    
 }
