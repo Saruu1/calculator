@@ -98,14 +98,14 @@ body{
         width: 76vw;
     }
     .buttons{
-        width: 75vw;
+        width: 75vw !important;
         row-gap: 0px;
-        column-gap: 10px;   
+        column-gap: 17px !important;   
     } 
     
     .box, .topBox, .op-button{
-        width: 22%;
-        height: 22%;
+        width: 18% !important;
+        height: 18% !important;
         padding-bottom: 0px;
         border-radius: 50%;
         
