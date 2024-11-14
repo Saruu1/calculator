@@ -100,12 +100,12 @@ body{
     .buttons{
         width: 75vw;
         row-gap: 0px;
-        column-gap: 19px;   
+        column-gap: 10px;   
     } 
     
     .box, .topBox, .op-button{
-        width: 18%;
-        height: 18%;
+        width: 22%;
+        height: 22%;
         padding-bottom: 0px;
         border-radius: 50%;
         
