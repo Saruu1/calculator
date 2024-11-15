@@ -105,8 +105,8 @@ body{
     } 
     
     .box, .topBox, .op-button{
-        width: 14vw !important;
-        height: 14vw !important;
+        width: min(14vw, 18vh) !important;
+        height: min(14vw, 18vh) !important;
         aspect-ratio: 1/1;
         padding-bottom: 0px;
         border-radius: 50%;
