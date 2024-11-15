@@ -90,55 +90,58 @@ body{
     font-size: 27px;
 }
 @media (max-width: 425px){
-    .calc-box{
-        height: auto;
-        top: 6vh;
-    }
     .screen{
         width: 76vw;
     }
     .buttons{
         width: 76vw ;
         row-gap: 0px;
-        column-gap: 17px; 
-        margin-bottom: 5px;  
+        column-gap: 19px; 
+        margin: 0;
     } 
     
     .box, .topBox, .op-button{
-        width: 20% ;
-        height: 17% ;
+        width: 53px ;
+        height: 53px ;
         aspect-ratio: 1/1;
         padding: 0;
         margin: 0;
         border-radius: 50%;
     }
-    
-    
+     
 }
-/* @media (max-width: 424px){
+/* For iPhone 11 */
+@media (width: 414px){ 
+    .calc-box{
+        top: 7vh;
+    }
+    .screen{
+        width: 78vw;
+    }
     .buttons{
-        width: 74vw; 
-        gap: 15px;
-        row-gap: 0px;  
+        width: 77vw; 
+        gap: 10px;
     } 
-    .topBox{
-        width: 52px;
-        height:52px;
-        border-radius: 50%;   
-    }
-    .box{
-        width: 52px;
-        height: 52px;
-        padding-bottom: 0px;
+    .topBox, .box, .op-button{
+        width: 70px;
+        height:70px;
         border-radius: 50%;
-        
+        margin: 0;
+        padding: 0;   
     }
-    .op-button{
-        width: 52px;
-        height: 52px;
-        border-radius: 50%;  
-    }
-} */
+}
+@media (width : 425px){
+    .buttons{
+        column-gap: 23px; 
+    } 
+    .box, .topBox, .op-button{
+        width: 55px ;
+        height: 55px ;
+        padding: 0;
+        margin: 0;
+        border-radius: 50%;
+    } 
+}
 @media (max-width: 374px){
     .buttons{
         width: 73vw; 
