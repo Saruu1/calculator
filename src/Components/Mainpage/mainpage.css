@@ -98,7 +98,7 @@ body{
         width: 76vw;
     }
     .buttons{
-        width: 75vw !important;
+        width: 76vw !important;
         row-gap: 0px;
         column-gap: 17px !important; 
         margin-bottom: 5px;  
@@ -106,14 +106,15 @@ body{
     
     .box, .topBox, .op-button{
         width: 18% !important;
-        height: 17% !important;
+        height: 18% !important;
+        aspect-ratio: 1/1;
         padding-bottom: 0px;
         border-radius: 50%;
     }
     
     
 }
-@media (max-width: 424px){
+/* @media (max-width: 424px){
     .buttons{
         width: 74vw; 
         gap: 15px;
@@ -136,7 +137,7 @@ body{
         height: 52px;
         border-radius: 50%;  
     }
-}
+} */
 @media (max-width: 374px){
     .buttons{
         width: 73vw; 
