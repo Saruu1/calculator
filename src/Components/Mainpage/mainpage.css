@@ -117,6 +117,8 @@ body{
     }
     .screen{
         width: 85vw;
+        font-size: 25px;
+        font-weight: bold;
     }
     .buttons{
         width: 85vw; 
