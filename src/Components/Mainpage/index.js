@@ -8,6 +8,8 @@ const HomePage = () => {
     const [expressionClass, setexpressionClass] = useState("");
     const [equalityClass, setequalityClass] = useState("");
     const MAX_LENGTH = 18;
+
+    // This function handle the clicks of number buttons
     const handleClick = (value)=>{
         if(equalty){
             setexpression(value);
@@ -27,6 +29,8 @@ const HomePage = () => {
             }
         }
     }
+
+    // This function handle the clicks of operator buttons
     const handleOpertion = (op) =>{
         if(expression.length === 0 || !isOperator(expression.charAt(expression.length -1))){
             if (equalty){
@@ -44,18 +48,25 @@ const HomePage = () => {
             setexpression((prev)=>prev.slice(0, -1) + op)
         }
         }
-    
+
+    // This function checks if the operator is present in the operators array
     const isOperator = (char) =>{
         return operators.includes(char);
     }
+
+    // This function clears the screen on clicking the AC button
     const clearAll = () =>{
         setexpression("");
         setequalty("");
         resetClasses();
     }
+
+    // This function removes the single last digit in an expression after clicking C button
     const clear = () =>{
         setexpression(expression.slice(0, -1));
     }
+
+    // This function calculates the value of an expression using evaluate function 
     const calculateValue = () =>{
         try {
             if (expression && !isOperator(expression.charAt(expression.length - 1))) {
@@ -72,7 +83,8 @@ const HomePage = () => {
             setexpressionClass(""); // Reset expression class
             setequalityClass(""); // Reset equalty class
         };
-        
+
+      // This function displays the value on screen  
     const displayValue = () => {
         return (
             <div className="display">
