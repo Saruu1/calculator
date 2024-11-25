@@ -37,8 +37,6 @@ const HomePage = () => {
                 setexpression(equalty + op);
                 setequalty("");
                 resetClasses();
-                // setequalty(equalty + op);
-                // setexpression("hello")
             }
             else{
                 setexpression((prev)=> prev + op);
@@ -65,15 +63,22 @@ const HomePage = () => {
     const clear = () =>{
         setexpression(expression.slice(0, -1));
     }
-
     // This function calculates the value of an expression using evaluate function 
     const calculateValue = () =>{
         try {
-            if (expression && !isOperator(expression.charAt(expression.length - 1))) {
+                if(isOperator(expression.charAt(expression.length - 1))) {
+                 const trimExpression = expression.slice(0, -1);
+                 setexpression(trimExpression)
+                 const result = evaluate(trimExpression)
+                 setequalty(result);
+                 setexpressionClass("afresult");
+                 setequalityClass("afequality");
+                 }
+              else{
                 const result = evaluate(expression);
                 setequalty(result);
                 setexpressionClass("afresult");
-                setequalityClass("afequality"); 
+                setequalityClass("afequality");
               }
         } catch (error) {
             setequalty("Expression Error");
@@ -121,7 +126,7 @@ const HomePage = () => {
         <button disabled={true} className="box">M</button> {/*this button is for decoration purposes and doesn't have any functionaliy*/}
         <button disabled={expression === "0"}value="0" className="box" onClick={(e)=>handleClick(e.target.value)}>0</button>
         <button disabled={expression.length===0 || expression.includes(".")} value="." className="box" onClick={(e)=>handleClick(e.target.value)}>.</button>
-        <button disabled={expression.length===0 || isOperator(expression.charAt(expression.length - 1)) || !(operators.some((op) => expression.includes(op)))} value="=" className="op-button" onClick={(e)=>{calculateValue(e.target.value);}}>=</button>
+        <button disabled={expression.length===0} value="=" className="op-button" onClick={(e)=>{calculateValue(e.target.value);}}>=</button>
         </div>
         </div>
   )
